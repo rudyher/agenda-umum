@@ -1,0 +1,73 @@
+@font-face {
+  font-family: Lato;
+  src: url('../fonts/Lato-Regular.ttf')
+}
+
+body {
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: rgb(51, 51, 51);
+  padding: 1rem;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #ffffff;
+  background-color: rgb(97, 97, 97);
+  padding: .5rem;
+}
+
+.content {
+  flex: 1;
+  overflow: auto;
+  padding: 0 1.75rem;
+}
+
+table {
+  margin: 0;
+}
+
+.dateTime {
+  text-align: right;
+}
+
+.dateTime .date {
+  font-size: 3rem;
+}
+
+/* 
+  FLOATING BUTTON (HOME NAV)
+*/
+.floating-button {
+  background-color: rgb(107, 216, 211);
+  color: #ffffff;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  font-size: 3rem;
+  border-radius:50%;
+  -moz-border-radius:50%;
+  -webkit-border-radius:50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

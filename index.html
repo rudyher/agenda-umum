@@ -15,13 +15,13 @@
 
 <body>
   <div class="main">
-    <div class="title">
-      <div>Agenda</div>
-      <div class="official">Bupati</div>
+    <div class="titlebar">
+      <div class="title">Agenda</div>
+      <select id="official" onchange="getEvents()"></select>
     </div>
     <div class="menu">
-      <div class="months">Januari</div>
-      <div class="years">2018</div>
+      <select id="month" onchange="getEvents()"></select>
+      <select id="year" onchange="getEvents()"></select>
     </div>
 
     <div class="content" id="content">

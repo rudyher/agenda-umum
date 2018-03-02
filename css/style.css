@@ -14,7 +14,7 @@ body {
   overflow: hidden;
 }
 
-.title {
+.titlebar {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -22,6 +22,11 @@ body {
   color: #ffffff;
   background-color: rgb(51, 51, 51);
   padding: 1rem;
+}
+
+.titlebar .title {
+  text-transform: uppercase;
+  padding: 0 5px;
 }
 
 .menu {
@@ -32,6 +37,23 @@ body {
   color: #ffffff;
   background-color: rgb(97, 97, 97);
   padding: .5rem;
+}
+
+.titlebar select#official,
+.menu select#month,
+.menu select#year
+{
+  width: 50%;
+  color: #ffffff;
+  margin: 0;
+  border: none;
+}
+
+.titlebar select#official option,
+.menu select#month option,
+.menu select#year option
+{
+  background-color: rgb(97, 97, 97);
 }
 
 .content {
@@ -59,8 +81,8 @@ table {
   background-color: rgb(107, 216, 211);
   color: #ffffff;
   position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+  bottom: 2rem;
+  right: 2rem;
   width: 5rem;
   height: 5rem;
   font-size: 3rem;

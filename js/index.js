@@ -65,12 +65,17 @@ xhr = (method, ep) => {
   console.log(opts)
   xhr('GET', ep + 'events' + opts)
     .then((data) => {
+      let table = document.getElementById('table')
+      while(table.firstChild) {
+        table.removeChild(table.firstChild)
+      }
+
       for (i in data) {
         let dt = new Date(data[i].dateTime)
 
         // console.log(data[i])
         let tr = document.createElement('tr')
-        document.getElementById('content').appendChild(tr)
+        document.getElementById('table').appendChild(tr)
 
         // dateTime
         let dateTime = document.createElement('td')
